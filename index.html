@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Investasi Final: AINTV - The Home for Future Creators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .glass-card {
+            background: rgba(23, 23, 23, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .validasi img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #c026d3);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #a3a3a3;
+        }
+        .table-header {
+            background-color: #1f2937;
+        }
+        .table-row-odd {
+            background-color: #111827;
+        }
+        .table-row-even {
+            background-color: #101010;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 40vh;
+            width: 80vw;
+            max-width: 600px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #374151;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 3.5rem;
+            padding-bottom: 2rem;
+        }
+        .timeline-dot {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0.25rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-color: #4f46e5;
+            border-radius: 9999px;
+            border: 3px solid #1f2937;
+        }
+        .check-icon { color: #22c55e; }
+        .cross-icon { color: #ef4444; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky-nav">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">AINTV</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#traction" class="text-gray-300 hover:text-white transition">Traction</a>
+                <a href="#moat" class="text-gray-300 hover:text-white transition">The Moat</a>
+                <a href="#competition" class="text-gray-300 hover:text-white transition">Competition</a>
+                <a href="#team" class="text-gray-300 hover:text-white transition">The Team</a>
+                <a href="#financials" class="text-gray-300 hover:text-white transition">Financials</a>
+                <a href="#roadmap" class="text-gray-300 hover:text-white transition">Roadmap</a>
+                <a href="#investment" class="text-gray-300 hover:text-white transition">Investment</a>
+            </div>
+            <a href="#cta" class="hidden md:block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+                Contact Us
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                    Proposal Investasi Final: <br class="hidden md:block">
+                    <span class="gradient-text">AINTV - The Home for Future Creators</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                    Dokumen ini adalah proposal investasi definitif untuk putaran pendanaan awal (Seed Round) PT. Alphaindonusa, yang berfokus secara eksklusif pada peluncuran dan penskalaan AINTV.
+                </p>
+            </div>
+        </section>
+
+        <!-- 1. The Thesis -->
+        <section id="thesis" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="section-title text-white">The Thesis</h2>
+                    <p class="section-subtitle mt-4">Memecahkan Masalah Nyata untuk Pasar yang Terabaikan.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-red-400 mb-4">Masalah</h3>
+                        <p class="text-gray-300">
+                            Jutaan kreator muda berbakat di Asia Tenggara (pelajar, mahasiswa) tidak memiliki jalur yang jelas untuk menampilkan karya mereka, mendapatkan bimbingan, atau memonetisasi kreativitas mereka sejak dini. Mereka tersesat dalam kebisingan platform raksasa yang tidak dirancang untuk mereka.
+                        </p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-green-400 mb-4">Solusi</h3>
+                        <p class="text-gray-300">
+                            AINTV hadir sebagai solusi terfokus: sebuah platform streaming dan ekosistem Web3 yang didedikasikan untuk menemukan, membina, dan mengangkat generasi kreator masa depan. Kami bukan sekadar "wadah", kami adalah **akselerator karir**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Traction & Validation Section -->
+        <section id="traction" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title text-white">Validasi & Traksi Awal</h2>
+                    <p class="section-subtitle mt-4">Kami bukan sekadar ide. Kami adalah produk nyata dengan pengguna nyata.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white mb-6">Aplikasi Kami Sudah Tayang!</h3>
+                        <p class="text-gray-400 mb-8">AINTV telah tersedia di platform web, Google Play Store, dan Apple App Store. Ini membuktikan kemampuan eksekusi tim kami dan mengurangi risiko teknis secara signifikan.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://play.google.com/store/apps/details?id=com.tvain.ten&pcampaignid=web_share" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg flex items-center space-x-2 transition"><i class="fab fa-apple"></i><span>App Store</span></a>
+                            <a href="https://apps.apple.com/id/app/aintv-streaming-television/id6747111777" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg flex items-center space-x-2 transition"><i class="fab fa-google-play"></i><span>Google Play</span></a>
+                            <a href="https://aintv.net/" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg flex items-center space-x-2 transition"><i class="fas fa-globe"></i><span>Web App</span></a>
+                        </div>
+                    </div>
+                    <div class="validasi">
+                        <img src="assets/Screenshot 2025-07-11 at 7.42.02 PM.png" alt="Screenshot Aplikasi AINTV" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8 text-center">
+                    <div class="glass-card p-6 rounded-xl">
+                        <p class="text-sm text-gray-400">Total Unduhan</p>
+                        <p class="text-4xl font-bold gradient-text">5,000+</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <p class="text-sm text-gray-400">Kreator Terdaftar</p>
+                        <p class="text-4xl font-bold gradient-text">250+</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <p class="text-sm text-gray-400">MoU dengan Institusi</p>
+                        <p class="text-4xl font-bold gradient-text">15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. The Moat -->
+        <section id="moat" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="section-title text-white">The Moat</h2>
+                    <p class="section-subtitle mt-4">Benteng Pertahanan Kompetitif yang Sulit Ditiru.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Akuisisi Berbasis Akar Rumput</h3><p class="text-gray-400">Kemitraan institusional (sekolah & universitas) menciptakan saluran akuisisi kreator yang berbiaya rendah dan sangat loyal.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Ekosistem Retensi Kreator</h3><p class="text-gray-400">"The AINTV Creator Program" adalah jalur karir berjenjang (Rising Star, Partner, Visionary) yang meningkatkan "biaya beralih" kreator.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Model Ekonomi Web3 Unggul</h3><p class="text-gray-400">Integrasi AINT Token memungkinkan model unik seperti Kepemilikan Kolektif (NFT) dan Data Earning bagi pengguna.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Competitive Analysis -->
+        <section id="competition" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title text-white">Analisis Kompetitif</h2>
+                    <p class="section-subtitle mt-4">Bagaimana Kami Berbeda dan Lebih Unggul.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-300 rounded-lg overflow-hidden">
+                        <thead class="text-xs text-white uppercase table-header">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">Fitur</th>
+                                <th scope="col" class="px-6 py-3 text-center">AINTV</th>
+                                <th scope="col" class="px-6 py-3 text-center">YouTube</th>
+                                <th scope="col" class="px-6 py-3 text-center">Vidio / Netflix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row-odd">
+                                <td class="px-6 py-4 font-medium">Fokus pada Kreator Pelajar</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check-circle check-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td class="px-6 py-4 font-medium">Program Akselerator Karir</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check-circle check-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                            </tr>
+                            <tr class="table-row-odd">
+                                <td class="px-6 py-4 font-medium">Monetisasi via NFT</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check-circle check-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-question-circle text-yellow-500 text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td class="px-6 py-4 font-medium">Model "Data Earning"</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check-circle check-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                            </tr>
+                            <tr class="table-row-odd">
+                                <td class="px-6 py-4 font-medium">Ekosistem Token Terintegrasi</td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-check-circle check-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                                <td class="px-6 py-4 text-center"><i class="fas fa-times-circle cross-icon text-xl"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. The Team -->
+        <!-- <section id="team" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title text-white">Tim Eksekusi</h2>
+                    <p class="section-subtitle mt-4">Visi yang hebat membutuhkan eksekutor yang luar biasa. Inilah kami.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="glass-card p-8 rounded-2xl"><img class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-indigo-500" src="https://placehold.co/100x100/1f2937/a3a3a3?text=CEO" alt="Foto CEO"><h3 class="text-xl font-bold text-white">[Nama CEO Anda]</h3><p class="gradient-text font-semibold mb-2">Chief Executive Officer</p><p class="text-sm text-gray-400">Contoh: Ex-Business Development Lead di Gojek, meningkatkan pendapatan divisi media sebesar 300% dalam 2 tahun.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><img class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-indigo-500" src="https://placehold.co/100x100/1f2937/a3a3a3?text=CTO" alt="Foto CTO"><h3 class="text-xl font-bold text-white">[Nama CTO Anda]</h3><p class="gradient-text font-semibold mb-2">Chief Technology Officer</p><p class="text-sm text-gray-400">Contoh: Mantan Senior Software Engineer di Tokopedia, memimpin tim sistem rekomendasi yang melayani 100 juta pengguna.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><img class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-indigo-500" src="https://placehold.co/100x100/1f2937/a3a3a3?text=CCO" alt="Foto CCO"><h3 class="text-xl font-bold text-white">[Nama CCO Anda]</h3><p class="gradient-text font-semibold mb-2">Chief Content Officer</p><p class="text-sm text-gray-400">Contoh: Produser dengan pengalaman 10 tahun di Miles Films, ahli dalam menemukan talenta baru dan produksi film komersial.</p></div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- 6. Financial Deep Dive -->
+        <section id="financials" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="section-title text-white">Analisis Keuangan Mendalam</h2><p class="section-subtitle mt-4">Data, Asumsi, dan Proyeksi yang Mendasari Model Bisnis Kami.</p></div>
+                <div class="mb-20"><h3 class="text-2xl font-bold text-center text-white mb-8">Alokasi Dana Investasi (Rp 2.000.000.000)</h3><div class="chart-container mx-auto"><canvas id="fundAllocationChart"></canvas></div></div>
+                <div class="mb-20"><h3 class="text-2xl font-bold text-center text-white mb-8">Proyeksi Laporan Laba Rugi 5 Tahun</h3><div class="overflow-x-auto"><table class="w-full text-sm text-left text-gray-300 rounded-lg overflow-hidden"><thead class="text-xs text-white uppercase table-header"><tr><th scope="col" class="px-6 py-3">Deskripsi</th><th scope="col" class="px-6 py-3 text-right">Tahun 1</th><th scope="col" class="px-6 py-3 text-right">Tahun 2</th><th scope="col" class="px-6 py-3 text-right">Tahun 3</th><th scope="col" class="px-6 py-3 text-right">Tahun 4</th><th scope="col" class="px-6 py-3 text-right">Tahun 5</th></tr></thead><tbody><tr class="table-row-odd"><td class="px-6 py-4 font-bold text-indigo-400" colspan="6">Pendapatan</td></tr><tr class="table-row-even"><td class="px-6 py-4 pl-10">Total Pendapatan</td><td class="px-6 py-4 text-right">Rp 663 Juta</td><td class="px-6 py-4 text-right">Rp 5 Miliar</td><td class="px-6 py-4 text-right">Rp 21,9 Miliar</td><td class="px-6 py-4 text-right">Rp 50,4 Miliar</td><td class="px-6 py-4 text-right">Rp 90,7 Miliar</td></tr><tr class="table-row-odd"><td class="px-6 py-4 font-bold text-indigo-400" colspan="6">Beban Pokok Pendapatan (COGS)</td></tr><tr class="table-row-even"><td class="px-6 py-4 pl-10">Biaya Server & Bandwidth</td><td class="px-6 py-4 text-right">(Rp 200 Juta)</td><td class="px-6 py-4 text-right">(Rp 800 Juta)</td><td class="px-6 py-4 text-right">(Rp 2,5 Miliar)</td><td class="px-6 py-4 text-right">(Rp 5 Miliar)</td><td class="px-6 py-4 text-right">(Rp 9 Miliar)</td></tr><tr class="table-row-odd bg-gray-800 font-bold"><td class="px-6 py-4">Laba Kotor</td><td class="px-6 py-4 text-right">Rp 463 Juta</td><td class="px-6 py-4 text-right">Rp 4,2 Miliar</td><td class="px-6 py-4 text-right">Rp 19,4 Miliar</td><td class="px-6 py-4 text-right">Rp 45,4 Miliar</td><td class="px-6 py-4 text-right">Rp 81,7 Miliar</td></tr><tr class="table-row-even"><td class="px-6 py-4 font-bold text-indigo-400" colspan="6">Beban Operasional (OPEX)</td></tr><tr class="table-row-odd"><td class="px-6 py-4 pl-10">Gaji & Tim</td><td class="px-6 py-4 text-right">(Rp 700 Juta)</td><td class="px-6 py-4 text-right">(Rp 1,2 Miliar)</td><td class="px-6 py-4 text-right">(Rp 2,5 Miliar)</td><td class="px-6 py-4 text-right">(Rp 4 Miliar)</td><td class="px-6 py-4 text-right">(Rp 7 Miliar)</td></tr><tr class="table-row-even"><td class="px-6 py-4 pl-10">Pemasaran & Akuisisi</td><td class="px-6 py-4 text-right">(Rp 500 Juta)</td><td class="px-6 py-4 text-right">(Rp 1 Miliar)</td><td class="px-6 py-4 text-right">(Rp 3 Miliar)</td><td class="px-6 py-4 text-right">(Rp 6 Miliar)</td><td class="px-6 py-4 text-right">(Rp 10 Miliar)</td></tr><tr class="table-row-odd"><td class="px-6 py-4 pl-10">Umum & Administrasi</td><td class="px-6 py-4 text-right">(Rp 400 Juta)</td><td class="px-6 py-4 text-right">(Rp 1 Miliar)</td><td class="px-6 py-4 text-right">(Rp 2 Miliar)</td><td class="px-6 py-4 text-right">(Rp 3,5 Miliar)</td><td class="px-6 py-4 text-right">(Rp 5 Miliar)</td></tr><tr class="table-row-even bg-gray-800 font-bold"><td class="px-6 py-4">Laba Sebelum Bunga, Pajak, Depresiasi (EBITDA)</td><td class="px-6 py-4 text-right text-red-400">(Rp 1,14 Miliar)</td><td class="px-6 py-4 text-right text-green-400">Rp 1 Miliar</td><td class="px-6 py-4 text-right text-green-400">Rp 11,9 Miliar</td><td class="px-6 py-4 text-right text-green-400">Rp 31,9 Miliar</td><td class="px-6 py-4 text-right text-green-400">Rp 59,7 Miliar</td></tr></tbody></table></div></div>
+                <div class="grid md:grid-cols-2 gap-12"><div class="mb-12"><h3 class="text-2xl font-bold text-center text-white mb-8">Proyeksi Arus Kas Tahunan (EBITDA)</h3><div class="chart-container mx-auto" style="height:40vh; width:100%"><canvas id="cashflowChart"></canvas></div></div><div class="mb-12"><h3 class="text-2xl font-bold text-center text-white mb-8">Arus Kas Kumulatif & Titik Impas (BEP)</h3><div class="chart-container mx-auto" style="height:40vh; width:100%"><canvas id="bepChart"></canvas></div><p class="text-center mt-4 text-gray-400 text-sm">Titik Impas (BEP) diproyeksikan tercapai pada pertengahan Tahun ke-2.</p></div></div>
+            </div>
+        </section>
+
+        <!-- 7. Investment Offer -->
+        <section id="investment" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="section-title text-white">Kebutuhan & Penawaran Investasi</h2><p class="section-subtitle mt-4">Sebuah Kemitraan untuk Pertumbuhan Eksponensial.</p></div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div><h3 class="text-3xl font-bold text-white mb-4">Kebutuhan Pendanaan</h3><p class="text-6xl font-extrabold gradient-text mb-6">Rp 2.000.000.000</p><h4 class="text-xl font-semibold text-white mb-4">Alokasi Dana:</h4><div class="space-y-3"><p><strong>35%</strong> - Pengembangan Produk & Teknologi</p><p><strong>30%</strong> - Akuisisi Konten & Dana Produksi Kreator</p><p><strong>20%</strong> - Pemasaran & Pengembangan Komunitas</p><p><strong>15%</strong> - Operasional & G&A (Runway 18 bulan)</p></div></div>
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-3xl font-bold text-white mb-4">Penawaran Kami</h3><div class="space-y-6"><div><p class="text-lg font-semibold text-indigo-400">Ekuitas</p><p class="text-2xl font-bold">20% kepemilikan saham di PT. Alphaindonusa.</p></div><div><p class="text-lg font-semibold text-indigo-400">Kebijakan Laba</p><p class="text-2xl font-bold">100% laba diinvestasikan kembali untuk pertumbuhan.</p></div><div><p class="text-lg font-semibold text-indigo-400">Tujuan Bersama</p><p class="text-2xl font-bold">Valuasi > Rp 100 Miliar dalam 5 tahun (Potensi ROI >25x).</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Roadmap -->
+        <section id="roadmap" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="section-title text-white">Peta Jalan Menuju Panggung Dunia</h2><p class="section-subtitle mt-4">Rencana Aksi Strategis Menuju Osaka Expo 2025 dan Selanjutnya.</p></div>
+                <div class="relative timeline max-w-3xl mx-auto">
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="glass-card p-6 rounded-xl"><p class="text-sm text-gray-400">H2 2024 (Fase Fondasi)</p><h4 class="text-lg font-bold text-white mb-2">Persiapan & Pra-Peluncuran</h4><ul class="text-sm text-gray-300 list-disc list-inside"><li>Finalisasi Tim Inti & Penasihat</li><li>Audit Keamanan Platform & Smart Contract</li><li>Penandatanganan 20 MoU Awal dengan Institusi</li><li>Peluncuran AINT Token (Genesis Program)</li></ul></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="glass-card p-6 rounded-xl"><p class="text-sm text-gray-400">Q1 - Q2 2025 (Fase Pertumbuhan Awal)</p><h4 class="text-lg font-bold text-white mb-2">Peluncuran & Akuisisi Komunitas</h4><ul class="text-sm text-gray-300 list-disc list-inside"><li>Peluncuran Resmi Platform AINTV (Global Beta)</li><li>Sosialisasi ke 50+ sekolah dan kampus di Indonesia</li><li>Listing Token AINT di DEX/CEX Partner</li><li>Kompetisi Film Pelajar Tingkat Nasional</li></ul></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="glass-card p-6 rounded-xl"><p class="text-sm text-gray-400">Q3 2025 (Fase Persiapan Global)</p><h4 class="text-lg font-bold text-white mb-2">Persiapan Osaka Expo</h4><ul class="text-sm text-gray-300 list-disc list-inside"><li>Kolaborasi awal dengan universitas di Jepang, Korea, Jerman</li><li>Pre-event: Mini screening & workshop jelang Expo</li><li>Finalisasi desain booth & kurasi film unggulan</li></ul></div></div>
+                    <div class="timeline-item"><div class="timeline-dot bg-amber-400 border-amber-600"></div><div class="glass-card p-6 rounded-xl border-amber-400"><p class="text-sm font-bold text-amber-400">Q4 2025 (Momen Puncak)</p><h4 class="text-lg font-bold text-white mb-2">Osaka Expo 2025</h4><ul class="text-sm text-gray-300 list-disc list-inside"><li>Debut Internasional di Booth Digital AINTV</li><li>Business Forum dengan stakeholder global</li><li>Peluncuran Fitur NFT untuk film unggulan</li></ul></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="glass-card p-6 rounded-xl"><p class="text-sm text-gray-400">2026 (Fase Penskalaan)</p><h4 class="text-lg font-bold text-white mb-2">Ekspansi & Pengembangan Produk</h4><ul class="text-sm text-gray-300 list-disc list-inside"><li>AINTV Award 2026 (Skala Internasional)</li><li>Ekspansi kemitraan ke 10 negara target</li><li>Peluncuran program beasiswa sineas pelajar</li><li>Pengembangan Fitur AI Recommendation Engine</li></ul></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Go-to-Market Strategy -->
+        <section id="gtm" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="section-title text-white">Strategi Go-to-Market</h2>
+                    <p class="section-subtitle mt-4">Bagaimana Kami Akan Mengeksekusi Fase 1 dari Peta Jalan.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Campus Ambassador Program</h3><p class="text-gray-400">Merekrut mahasiswa berpengaruh sebagai duta AINTV di kampus mereka untuk menjalankan lokakarya, kompetisi film pendek, dan acara komunitas.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Kampanye Digital Bertarget</h3><p class="text-gray-400">Fokus pada TikTok dan Instagram dengan konten di balik layar dari para kreator, tantangan video, dan kolaborasi dengan influencer pendidikan.</p></div>
+                    <div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold text-white mb-3">Peluncuran Komunitas Eksklusif</h3><p class="text-gray-400">Membangun komunitas awal di Discord/Telegram untuk 1.000 pengguna pertama, memberikan mereka akses awal, airdrop token, dan kesempatan berbicara langsung dengan tim.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Risk Analysis -->
+        <section id="risks" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="section-title text-white">Analisis Risiko & Mitigasi</h2><p class="section-subtitle mt-4">Mengantisipasi Tantangan, Mempersiapkan Solusi.</p></div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-300 rounded-lg overflow-hidden">
+                        <thead class="text-xs text-white uppercase table-header">
+                            <tr><th scope="col" class="px-6 py-3">Kategori Risiko</th><th scope="col" class="px-6 py-3">Deskripsi</th><th scope="col" class="px-6 py-3">Strategi Mitigasi</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row-odd"><td class="px-6 py-4 font-medium">Kompetisi</td><td class="px-6 py-4">Pesaing raksasa meluncurkan program serupa.</td><td class="px-6 py-4">Memperdalam Creator Program dengan fitur eksklusif & membangun komunitas yang solid.</td></tr>
+                            <tr class="table-row-even"><td class="px-6 py-4 font-medium">Operasional</td><td class="px-6 py-4">Biaya moderasi konten membengkak.</td><td class="px-6 py-4">Mengembangkan AI untuk moderasi awal & alokasi anggaran khusus.</td></tr>
+                            <tr class="table-row-odd"><td class="px-6 py-4 font-medium">Regulasi</td><td class="px-6 py-4">AINT Token/NFT diklasifikasikan sebagai Efek.</td><td class="px-6 py-4">Konsultasi hukum proaktif, memaksimalkan utilitas, dan menyiapkan model alternatif.</td></tr>
+                            <tr class="table-row-even"><td class="px-6 py-4 font-medium">Teknologi</td><td class="px-6 py-4">Biaya bandwidth melebihi proyeksi.</td><td class="px-6 py-4">Menerapkan adaptive bitrate streaming & negosiasi kontrak dengan CDN.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / CTA -->
+    <footer id="cta" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+             <h2 class="section-title text-white">Mari Membangun Masa Depan Bersama</h2>
+             <p class="section-subtitle mt-4 max-w-2xl mx-auto">Kami mencari mitra investor yang memiliki visi yang sama untuk memberdayakan generasi kreator selanjutnya. Mari diskusikan bagaimana kita bisa mencapai tujuan ini bersama.</p>
+             <div class="mt-8">
+                <a href="mailto:investor.relations@alphaindonusa.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition text-lg inline-block">
+                    Jadwalkan Pertemuan
+                </a>
+             </div>
+             <div class="mt-12 text-gray-500">
+                <p>PT. Alphaindonusa</p>
+                <p>Jl. Buah No. 13, RT.3/RW.1, Cijantung, Kec. Ps. Rebo, Kota Jakarta Timur, DKI Jakarta 13770</p>
+             </div>
+        </div>
+    </footer>
+
+    <script>
+        // Helper function to format numbers into Rupiah
+        function formatRupiah(value) {
+            const isNegative = value < 0;
+            const absValue = Math.abs(value);
+            let formattedValue;
+
+            if (absValue >= 1000) {
+                // Format to Miliar
+                formattedValue = (absValue / 1000).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' Miliar';
+            } else {
+                // Format to Juta
+                formattedValue = absValue.toLocaleString('id-ID') + ' Juta';
+            }
+            return (isNegative ? '(' : '') + 'Rp ' + formattedValue + (isNegative ? ')' : '');
+        }
+
+        // Data untuk grafik
+        const ebitdaData = [-1137, 1000, 11900, 31870, 59666];
+        const cumulativeEbitda = ebitdaData.reduce((acc, val, i) => {
+            acc.push((acc[i-1] || 0) + val);
+            return acc;
+        }, []);
+
+        // 1. Grafik Pie Alokasi Dana
+        const fundAllocationCtx = document.getElementById('fundAllocationChart').getContext('2d');
+        new Chart(fundAllocationCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Pengembangan Produk & Teknologi', 'Akuisisi Konten & Dana Kreator', 'Pemasaran & Komunitas', 'Operasional & G&A'],
+                datasets: [{
+                    label: 'Alokasi Dana',
+                    data: [35, 30, 20, 15],
+                    backgroundColor: ['rgba(79, 70, 229, 0.7)','rgba(192, 38, 211, 0.7)','rgba(5, 150, 105, 0.7)','rgba(219, 39, 119, 0.7)'],
+                    borderColor: ['rgba(79, 70, 229, 1)','rgba(192, 38, 211, 1)','rgba(5, 150, 105, 1)','rgba(219, 39, 119, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { 
+                    legend: { position: 'bottom', labels: { color: '#e5e5e5', font: { size: 12 } } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 2. Grafik Batang Arus Kas (EBITDA)
+        const cashflowCtx = document.getElementById('cashflowChart').getContext('2d');
+        new Chart(cashflowCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Tahun 1', 'Tahun 2', 'Tahun 3', 'Tahun 4', 'Tahun 5'],
+                datasets: [{
+                    label: 'EBITDA',
+                    data: ebitdaData,
+                    backgroundColor: ebitdaData.map(val => val < 0 ? 'rgba(239, 68, 68, 0.7)' : 'rgba(34, 197, 94, 0.7)'),
+                    borderColor: ebitdaData.map(val => val < 0 ? 'rgba(239, 68, 68, 1)' : 'rgba(34, 197, 94, 1)'),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { 
+                    y: { 
+                        beginAtZero: false, 
+                        ticks: { 
+                            color: '#9ca3af',
+                            callback: function(value) {
+                                return formatRupiah(value).replace(/[()]/g, '');
+                            }
+                        }, 
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' } 
+                    }, 
+                    x: { ticks: { color: '#9ca3af' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } 
+                },
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return formatRupiah(context.parsed.y);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 3. Grafik Garis Arus Kas Kumulatif (BEP)
+        const bepCtx = document.getElementById('bepChart').getContext('2d');
+        new Chart(bepCtx, {
+            type: 'line',
+            data: {
+                labels: ['Mulai', 'Tahun 1', 'Tahun 2', 'Tahun 3', 'Tahun 4', 'Tahun 5'],
+                datasets: [{
+                    label: 'Arus Kas Kumulatif',
+                    data: [0, ...cumulativeEbitda],
+                    fill: false,
+                    borderColor: 'rgba(79, 70, 229, 1)',
+                    tension: 0.1,
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: 'rgba(79, 70, 229, 1)'
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { 
+                    y: { 
+                        beginAtZero: false, 
+                        ticks: { 
+                            color: '#9ca3af',
+                            callback: function(value) {
+                                return formatRupiah(value).replace(/[()]/g, '');
+                            }
+                        }, 
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' } 
+                    }, 
+                    x: { ticks: { color: '#9ca3af' }, grid: { color: 'rgba(255, 255, 255, 0.1)' } } 
+                },
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return formatRupiah(context.parsed.y);
+                            }
+                        }
+                    }
+                },
+                annotation: {
+                    annotations: {
+                        line1: {
+                            type: 'line',
+                            yMin: 0,
+                            yMax: 0,
+                            borderColor: 'rgb(239, 68, 68)',
+                            borderWidth: 2,
+                            borderDash: [5, 5]
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
